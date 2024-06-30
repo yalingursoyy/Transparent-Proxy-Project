@@ -6,13 +6,21 @@ For this project, I have created 3 Virtual Machines and set them on a virtual NA
 
 # Project run-through
 1-Client joins the network, receives IP address from the DHCP server (dnsmasq) automatically. 
+
 2-Client tries to send HTTP request to example.com
+
 3-DNS resolve is manipulated by dnsmasq, instead of example.com, dnsmasq resolves the domain name as 10.0.2.2 (Proxy server's machine).
+
 4-Proxy server picks up the request on port 80. 
+
 5-Requests are logged and cached.
+
 6-Server handles and directs the HTTP request to example.com.
+
 7-Server relays the HTTP response to client.
+
 8-Client receives the HTTP response from server, does not know it comes from the server.
+
 
 # Conclusion
 
